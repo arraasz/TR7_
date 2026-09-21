@@ -1,0 +1,79 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-200 min-h-screen flex items-center justify-center p-4 font-sans">
+     <!-- div for card -->
+      <div class="w-full max-w-sm bg-blue-300 rounded-2xl shadow-2xl overflow-hidden">
+        <!-- div for ava / header -->
+         <div class="bg-blue-800 pt-8 pb-6 flex justify-center">
+        <!-- div for profile's border -->
+         <div class="relative w-36 h-36 rounded-full border-4 border-blue-400 overflow-hidden shadow-inner">
+                <img src="jyy.jpg" alt="profile picture" class="w-full h-full object-cover"/>
+             </div>
+         </div>
+     
+         
+         <!-- Profile information -->
+         <div class="p-6 text-center text-gray space-y-4">
+             <!-- name section -->
+             <div>
+                <h2 class="text-xl font-bold tracking-wide">Ardya Rahma</h2>
+            <div class="flex items-center justify-center gap-1 text-xs text-gray-600 mt-1">
+                   <p class="uppercase tracking-wider font-semibold">SMA ABBS BOYOLALI</p>
+            </div>
+                <P class="text-sm text-gray-600 mt-1 font-light">I am a 10th Grade Student</P>
+            </div>
+
+
+            <!-- div for contact information -->
+        <div class="flex justify-center gap-3 pt-2">
+            <a class="px-5 py-2 bg-blue-700 border border-blue-900 rounded-md text-xs font-medium hover:bg-blue-900 transition-colors shadow" href="https://github.com/arraasz" target="_blank">Github</a>
+            <a class="px-5 py-2 bg-blue-700 border border-blue-900 rounded-md text-xs font-medium hover:bg-blue-900 transition-colors shadow" href="https://instagram.com/rahmarraa_" target="_blank">Instagram</a>
+        </div>
+
+        <hr class="border-gray-900/60 my-4"/>
+
+        <!-- div for SKILLS area -->
+        <div class="text-left">
+            <h3 class="text-xs font-bold tracking-wider text-black-400 mb-2">Skills</h3>
+            <div class="grid grid-cols-3 gap-4 text-xs text-black-600">
+                <span class="border border-blue-400 px-2 py-1 rounded-md text-sm font-medium">HTML</span>
+                <span class="border border-blue-400 px-2 py-1 rounded-md text-sm font-medium">CSS</span>
+                <span class="border border-blue-400 px-2 py-1 rounded-md text-sm font-medium">JavaScript</span>
+          </div>
+         </div>
+
+        <hr class="border-gray-900/60 my-4"/>
+    
+    <!-- div for formulir 'SEND MESSAGE' -->
+        <div class="text-left pt-1">
+             <h3 class="text-xs font-bold tracking-wider text-black-400 mb-2">SEND MESSAGE</h3>    
+             <form action="#" method="POST" class="space-y-3">
+                <div>
+                    <label for="name" class="text-xs font-semibold">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="your name" class="w-full px-3 py-2 text-xs bg-blue-300 text-white rounded border border-blue-900/80 focus:outline-none focus:border-blue-500 placeholder-blue-400" required>
+            
+                </div>
+                <div>
+                    <label for="email" class="text-xs font-semibold">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your email" class="w-full px-3 py-2 text-xs bg-blue-300 text-white rounded border border-blue-900/80 focus:outline-none focus:border-blue-500 placeholder-blue-400" required>
+                </div>
+                <div>
+                    <label for="message" class="text-xs font-semibold">Message:</label>
+                    <textarea id="message" name="message" placeholder="your message" class="w-full px-3 py-2 text-xs bg-blue-300 text-white rounded border border-blue-900/80 focus:outline-none focus:border-blue-500 placeholder-blue-400" required></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-black font-medium text-xs rounded transition-colors shadow">Send Message</button>
+             </form>
+        </div>
+
+    </div>
+
+      
+     </div>
+</body>
+</html>
